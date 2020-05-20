@@ -7,6 +7,7 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href = "less/index.less" rel = "stylesheet/less" type = "text/css"/>
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +15,51 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+        <div class="header-content">
+            <nav>
+              <img src="https://via.placeholder.com/150" />
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Work</a>
+              <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+      <div class="main-content">
+          <article class="left">
+            <h1>My Resume</h1>
+            <h2>Front-end developer</h2>
+            <h3>Work Experience</h3>
+            <ul>
+              <li><p>Software Support WineDirect 2019 to present</p></li>
+              <li><p>Software Support WalkMe 2019 </p></li>
+              <li><p>Software Support Prezi 2016 to 2018</p></li>
+            </ul>
+          </article>
+          <article class="right">
+            <h2>Skills</h2>
+              <ul>
+                <li><p>Troubleshooting</p></li>
+                <li><p>Teaching</p></li>
+                <li><p>Cooking</p></li>
+              </ul>
+          </article>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2020 Harvey Magana</p>
+        <!--<nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work</a>
+            <a href="#">Contact</a>
+          </nav>-->
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

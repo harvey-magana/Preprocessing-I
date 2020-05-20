@@ -57,3 +57,107 @@ html, body {
     height: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+@main-content: #efefef;
+@font-styles: #a9a9a9;
+@button-styles: #ff3b3f;
+@header-footer: #caebf2;
+
+@page-margin: 0;
+@section-padding: 5rem;
+
+.container {
+	margin: @page-margin;
+}
+
+.header-content, .footer-content {
+	background-color: @header-footer;
+	padding: @section-padding;
+}
+
+.main-content {
+	background-color: @main-content;
+	padding: @section-padding;
+}
+
+.header-content nav {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.header-content nav img {
+	border-radius: 8rem;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3.5rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+p, a {
+	font-size: 2rem;
+}
+
+h1, h2, h3 {
+	color: @font-styles;
+}
+
+p {
+	color: @font-styles;
+}
+
+nav a{
+	margin: 0 0.5rem;
+	padding: 0.5rem;
+	color: @main-content;
+	border: 1px solid @font-styles;
+	background: @button-styles;
+	text-decoration: none;
+
+}
+
+.main-content {
+	display: flex;
+}
+
+.left {
+	width: 70%;
+	padding: 5rem;
+}
+
+.right {
+	width: 25%;
+	padding: 5rem;
+}
+
+.left h1 {
+	margin: 0 0 2rem;
+}
+
+.left h2 {
+	margin: 0 0 1rem;
+}
+
+.left h3 {
+	margin: 0 0 0.6rem;
+}
+
+.right h2 {
+	margin: 0 0 2rem;
+}
+
+.footer-content nav {
+	display: flex;
+
+}
