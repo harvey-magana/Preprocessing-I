@@ -140,6 +140,9 @@ html {
 .container {
   margin: 0;
 }
+.header-content {
+  padding: 5rem;
+}
 .header-content,
 .footer-content {
   background-color: #caebf2;
@@ -176,6 +179,11 @@ a {
   font-size: 2.7rem;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+address {
+  font-size: 2rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #a9a9a9;
+}
 h1,
 h2,
 h3 {
@@ -206,6 +214,12 @@ nav a {
 .right h2 {
   margin: 0 0 2rem;
 }
+.right address {
+  padding: 1rem 0 0;
+}
+.right address a {
+  color: #a9a9a9;
+}
 .left h1 {
   margin: 0 0 2rem;
 }
@@ -214,6 +228,15 @@ nav a {
 }
 .left h3 {
   margin: 0 0 0.6rem;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-content a {
+  color: #a9a9a9;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .header-content nav img {
