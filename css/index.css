@@ -140,59 +140,79 @@ html {
 .container {
   margin: 0;
 }
-.header-content {
+.container .header-content {
   padding: 5rem;
 }
-.header-content,
-.footer-content {
+.container .header-content,
+.container .footer-content {
   background-color: #caebf2;
   padding: 5rem;
 }
-.main-content {
-  background-color: #efefef;
-  padding: 5rem;
-}
-.header-content nav {
+.container .header-content nav {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
-.header-content nav img {
+.container .header-content nav img {
   border-radius: 8rem;
 }
-h1 {
-  font-family: 'Anton', sans-serif;
+.container .main-content {
+  background-color: #efefef;
+  padding: 5rem;
 }
-h1 {
-  font-size: 4rem;
+.container .main-content h1,
+.container .main-content h2,
+.container .main-content h3 {
+  color: #a9a9a9;
 }
-h2 {
-  font-size: 3.5rem;
-  font-family: 'Anton', sans-serif;
-}
-h3 {
-  font-size: 3rem;
-  font-family: 'Anton', sans-serif;
-}
-p,
-a {
-  font-size: 2.7rem;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-address {
+.container .main-content address {
   font-size: 2rem;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #a9a9a9;
 }
-h1,
-h2,
-h3 {
+.container .main-content p {
   color: #a9a9a9;
 }
-p {
+.container .main-content {
+  display: flex;
+}
+.container .main-content .left {
+  width: 70%;
+  padding: 5rem;
+}
+.container .main-content .left h1 {
+  margin: 0 0 2rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+}
+.container .main-content .left h2 {
+  margin: 0 0 1rem;
+}
+.container .main-content .left h3 {
+  margin: 0 0 0.6rem;
+}
+.container .main-content h2 {
+  font-size: 3.5rem;
+  font-family: 'Anton', sans-serif;
+}
+.container .main-content h3 {
+  font-size: 3rem;
+  font-family: 'Anton', sans-serif;
+}
+.container .main-content .right {
+  width: 25%;
+  padding: 5rem;
+}
+.container .main-content .right h2 {
+  margin: 0 0 2rem;
+}
+.container .main-content .right address {
+  padding: 1rem 0 0;
+}
+.container .main-content .right address a {
   color: #a9a9a9;
 }
-nav a {
+.container nav a {
   margin: 0 0.5rem;
   padding: 0.5rem;
   color: #efefef;
@@ -200,41 +220,20 @@ nav a {
   background: #ff3b3f;
   text-decoration: none;
 }
-.main-content {
-  display: flex;
+.container p,
+.container a {
+  font-size: 2.7rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.left {
-  width: 70%;
-  padding: 5rem;
-}
-.right {
-  width: 25%;
-  padding: 5rem;
-}
-.right h2 {
-  margin: 0 0 2rem;
-}
-.right address {
-  padding: 1rem 0 0;
-}
-.right address a {
-  color: #a9a9a9;
-}
-.left h1 {
-  margin: 0 0 2rem;
-}
-.left h2 {
-  margin: 0 0 1rem;
-}
-.left h3 {
-  margin: 0 0 0.6rem;
-}
-.footer-content {
+.container .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.footer-content a {
+.container .footer-content p {
+  color: #a9a9a9;
+}
+.container .footer-content a {
   color: #a9a9a9;
   text-decoration: none;
 }
