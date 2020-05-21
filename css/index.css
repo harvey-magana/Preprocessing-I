@@ -215,3 +215,45 @@ nav a {
 .left h3 {
   margin: 0 0 0.6rem;
 }
+@media (max-width: 500px) {
+  .header-content nav img {
+    display: none;
+  }
+  .header-content nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #efefef;
+    border: 2px solid #a9a9a9;
+    background: #ff3b3f;
+    text-decoration: none;
+  }
+  .header-content,
+  .footer-content {
+    padding: 3rem;
+  }
+  .main-content {
+    padding: 3rem;
+  }
+  .header-content nav a {
+    margin: 1rem 1.5rem;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+    padding: 3rem;
+  }
+  .left h2 {
+    display: none;
+  }
+  .left h3 {
+    margin: 2rem 0 2rem;
+  }
+}

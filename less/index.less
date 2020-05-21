@@ -66,8 +66,12 @@ html {
 @button-styles: #ff3b3f;
 @header-footer: #caebf2;
 
+@h-fonts: 'Anton', sans-serif;;
+
 @page-margin: 0;
 @section-padding: 5rem;
+
+@mobile-padding: 3rem;
 
 .container {
 	margin: @page-margin;
@@ -83,6 +87,7 @@ html {
 	padding: @section-padding;
 }
 
+
 .header-content nav {
 	display: flex;
 	align-items: baseline;
@@ -94,7 +99,7 @@ html {
 }
 
 h1 {
-	font-family: 'Anton', sans-serif;
+	font-family: @h-fonts;
 }
 
 h1 {
@@ -103,12 +108,12 @@ h1 {
 
 h2 {
 	font-size: 3.5rem;
-	font-family: 'Anton', sans-serif;
+	font-family: @h-fonts;
 }
 
 h3 {
 	font-size: 3rem;
-	font-family: 'Anton', sans-serif;
+	font-family: @h-fonts;
 }
 
 p, a {
@@ -165,3 +170,51 @@ nav a{
 	}
 }
 
+@media (max-width: 500px) {
+	.header-content nav img {
+		display: none;
+	}
+
+	.header-content nav {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&nav a {
+		margin: 0 0.5rem;
+		padding: 0.5rem 1rem;
+		color: #efefef;
+		border: 2px solid #a9a9a9;
+		background: #ff3b3f;
+		text-decoration: none;
+	}
+
+	.header-content, .footer-content {
+		padding: @mobile-padding;
+	}
+	
+	.main-content {
+		padding: @mobile-padding;
+	}
+
+	.header-content nav a {
+		margin: 1rem 1.5rem;
+	}
+	.main-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left, .right {
+		width: 100%;
+		padding: @mobile-padding;
+	}
+
+	&.left h2 {
+		display: none;
+	}
+
+	&.left h3 {
+		margin: 2rem 0 2rem;
+	}
+}
