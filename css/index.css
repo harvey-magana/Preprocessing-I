@@ -292,10 +292,11 @@ html {
   }
   .container .header-content nav {
     display: grid;
-    grid-gap: 0.3rem;
-    grid-template-columns: repeat(4, [col] 10rem);
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, [col] 16rem);
     grid-template-rows: repeat(3, [row] 6rem);
     justify-items: normal;
+    padding: 3rem;
   }
   .container .header-content nav h1 {
     /* harvey */
@@ -320,24 +321,24 @@ html {
   }
   .container .header-content nav .third {
     /* magana */
-    grid-column: col 3 / span 2;
+    grid-column: col 2 / span 2;
     grid-row: row;
   }
   .container .header-content nav .fourth {
     /* home*/
-    order: 3;
+    grid-column: col 1 / span 1;
   }
   .container .header-content nav .fifth {
     /* about */
-    order: 4;
+    grid-column: col 2 / span 1;
   }
   .container .header-content nav .sixth {
     /* work*/
-    order: 5;
+    grid-column: col 1 / span 1;
   }
   .container .header-content nav .seventh {
     /* contact */
-    order: 6;
+    grid-column: col 2 / span 1;
   }
   .container .main-content {
     padding: 3rem;

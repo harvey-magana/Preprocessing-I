@@ -260,10 +260,11 @@ html {
 
 			nav {
 				display: grid;
-				grid-gap: 0.3rem;
-				grid-template-columns: repeat(4, [col] 10rem );
-				grid-template-rows: repeat(3, [row] 6rem );
+				grid-gap: 0.5rem;
+				grid-template-columns: repeat(2, [col] 16rem);
+				grid-template-rows: repeat(3, [row] 6rem);
 				justify-items: normal;
+				padding: 3rem;
 
 				h1 {
 					/* harvey */
@@ -292,28 +293,28 @@ html {
 		
 				.third {
 					/* magana */
-					grid-column: col 3 / span 2;
-    				grid-row: row;
+					grid-column: col 2 / span 2;
+					grid-row: row;
 				} 
 		
 				.fourth {
 					/* home*/
-					order: 3;
+					grid-column: col 1 / span 1;
 				} 
 		
 				.fifth {
 					/* about */
-					order: 4;
+					grid-column: col 2 / span 1;
 				} 
 		
 				.sixth { 
 					/* work*/
-					order: 5;
+					grid-column: col 1 / span 1;
 				} 
 		
 				.seventh {
 					/* contact */
-					order: 6;
+					grid-column: col 2 / span 1;
 				} 
 			}
 		}
