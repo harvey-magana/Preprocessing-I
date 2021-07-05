@@ -7,6 +7,9 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href = "less/index.less" rel = "stylesheet/less" type = "text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +17,53 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+        <div class="header-content">
+            <nav>
+              <img class="first" src="https://via.placeholder.com/150" />
+              <h1 class="second" >Harvey</h1>
+              <h1 class="third">Magana</h1>
+              <a class="fourth" href="index.html">Home</a>
+              <a class="fifth" href="#">About</a>
+              <a class="sixth" href="#">Work</a>
+              <a class="seventh" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+      <div class="main-content">
+          <article class="left">
+            <h1>My Resume</h1>
+            <h2>Front-end developer</h2>
+            <h3>Work Experience</h3>
+            <ul>
+              <li><p>Software Support WineDirect 2019 to present</p></li>
+              <li><p>Software Support WalkMe 2018 to 2019 </p></li>
+              <li><p>Software Support Prezi 2016 to 2018</p></li>
+            </ul>
+          </article>
+          <article class="right">
+            <h2>Skills</h2>
+              <ul>
+                <li><p>Troubleshooting</p></li>
+                <li><p>Teaching</p></li>
+                <li><p>Cooking</p></li>
+              </ul>
+              <address>
+                <h3>Contact me</h3>
+                Email me: <br><a href="mailto:webmaster@example.com">Harvey Magana</a><br>
+                Call me: <br><a href="tel:+14156327997">(415) 632-7997</a><br>
+                </address>
+          </article>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2020 Harvey Magana</p>
+        <a href="https://github.com/harvey-magana/Preprocessing-I">Check out my repo</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

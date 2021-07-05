@@ -57,3 +57,294 @@ html, body {
     height: 100%;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+@main-content: #efefef;
+@font-styles: #949090;
+@button-styles: #ff3b3f;
+@header-footer: #caebf2;
+
+@h-fonts: 'Anton', sans-serif;;
+
+@page-margin: 0;
+@section-padding: 5rem;
+
+@mobile-padding: 3rem;
+@mobile-header-padding: 6rem 3rem 0;
+
+.banana() {
+	font-size: 2.7rem;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container {
+	margin: @page-margin;
+
+	.header-content {
+		padding: @section-padding;
+		background-color: @header-footer;
+
+		h1 {
+			margin: 0 0 2rem;
+			font-family: @h-fonts;
+			font-size: 4rem;
+			color: @font-styles;
+		}
+
+		nav {
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+
+
+			a {
+				margin: 0 0.5rem;
+				padding: 0.5rem;
+				color: @main-content;
+				border: 1px solid @font-styles;
+				background: @button-styles;
+				text-decoration: none;
+				.banana();
+			}
+
+			img {
+				border-radius: 8rem;
+			}
+
+			.first {
+				/* img */
+				order: 4;
+			} 
+	
+			.second {
+				/* harvey */
+				order: 3;
+			} 
+	
+			.third {
+				/* magana */
+				order: 5;
+			} 
+	
+			.fourth {
+				/* home*/
+				order: 1;
+			} 
+	
+			.fifth {
+				/* about */
+				order: 2;
+			} 
+	
+			.sixth { 
+				/* work*/
+				order: 6;
+			} 
+	
+			.seventh {
+				/* contact */
+				order: 7;
+			} 
+		}
+	}
+
+	.main-content {
+		background-color: @main-content;
+		padding: @section-padding;
+		display: flex;
+
+		.left {
+			width: 70%;
+			padding: 5rem;
+	
+			h1 {
+				margin: 0 0 2rem;
+				font-family: @h-fonts;
+				font-size: 4rem;
+			}
+		
+			h2 {
+				margin: 0 0 1rem;
+			}
+		
+			h3 {
+				margin: 0 0 0.6rem;
+			}
+
+			p {
+				.banana()
+			}
+
+			ul {
+				line-height: 3.5rem;
+			}
+		}
+
+		.right {
+			width: 25%;
+			padding: 5rem;
+		
+			h2 {
+				margin: 0 0 2rem;
+			}
+		
+			address {
+				padding: 1rem 0 0;
+			}
+			address a {
+				color: @font-styles;
+			}
+
+			p, a {
+				.banana()
+			}
+
+			ul {
+				line-height: 3.5rem;
+			}
+		}
+		
+		h1, h2, h3 {
+			color: @font-styles;
+		}
+
+		h2 {
+			font-size: 3.5rem;
+			font-family: @h-fonts;
+		}
+		
+		h3 {
+			font-size: 3rem;
+			font-family: @h-fonts;
+		}
+
+		address {
+			font-size: 2rem;
+			font-family: 'Yanone Kaffeesatz', sans-serif;
+			color: @font-styles;
+		}
+
+		p {
+			color: @font-styles;
+		}
+	}
+
+	.footer-content {
+		padding: @section-padding + 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: @header-footer;
+
+		p {
+			color: @font-styles;
+			.banana();
+		}
+	
+		a {
+			color: @font-styles;
+			text-decoration: none;
+			.banana()
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		margin: @page-margin;
+		
+		.header-content {
+			padding: @mobile-header-padding;
+
+			nav {
+				display: grid;
+				grid-gap: 0.5rem;
+				grid-template-columns: repeat(2, [col] 16rem);
+				grid-template-rows: repeat(3, [row] 6rem);
+				justify-items: normal;
+				padding: 3rem;
+
+				h1 {
+					/* harvey */
+					order: 1;
+				}
+				
+				img {
+					display: none;
+				}
+
+				a {
+					/*margin: 1rem 1.5rem;*/
+					/*margin: 0 0.5rem;*/
+					padding: 0.5rem 1rem;
+					color: #efefef;
+					border: 2px solid #a9a9a9;
+					background: #ff3b3f;
+					text-decoration: none;
+				}
+		
+				.second {
+					/* harvey */
+					grid-column: col / span 2;
+					grid-row: row;
+				} 
+		
+				.third {
+					/* magana */
+					grid-column: col 2 / span 2;
+					grid-row: row;
+				} 
+		
+				.fourth {
+					/* home*/
+					grid-column: col 1 / span 1;
+				} 
+		
+				.fifth {
+					/* about */
+					grid-column: col 2 / span 1;
+				} 
+		
+				.sixth { 
+					/* work*/
+					grid-column: col 1 / span 1;
+				} 
+		
+				.seventh {
+					/* contact */
+					grid-column: col 2 / span 1;
+				} 
+			}
+		}
+
+		.main-content {
+			padding: @mobile-padding;
+			display: flex;
+			flex-direction: column;
+
+			.left {
+				width: 100%;
+				padding: @mobile-padding;
+			}
+
+			.right {
+				width: 100%;
+				padding: @mobile-padding;
+			}
+
+			.left h2 {
+				display: none;
+			}
+		
+			.left h3 {
+				margin: 2rem 0 2rem;
+			}
+		}
+
+		.footer-content {
+			padding: @mobile-padding;
+		}
+	}
+}
